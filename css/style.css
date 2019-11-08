@@ -1,0 +1,107 @@
+@font-face 
+{
+    font-family: "SourceSansPro";
+    src: url("../font/sans/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+@font-face 
+{
+    font-family: "Roboto";
+    src: url("../font/roboto/Roboto-Regular.ttf");
+}
+    
+
+body {
+    
+    font-family: 'Roboto', sans-serif;
+    margin:60px;
+}
+
+/* Logo Name , Felipe de Carvalho*/
+#brand {
+    font-family: 'Cabin', sans-serif;
+    font-variant: small-caps;
+    font-variant-ligatures: normal;
+    font-variant-caps: small-caps;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-size: 1.35em;
+    line-height: 1.0em;
+}
+
+.lighttext
+{
+    font-weight: 300 !important;
+}
+
+.boldtext
+{
+    font-weight: 700 !important;
+}
+/* End Logo Name*/
+
+/* Right Side Itnes*/
+.infoitem {
+    margin-bottom: 20px;
+}
+
+.infoheader {
+    font-family: 'Cabin', sans-serif;
+    font-variant: small-caps;
+    font-variant-ligatures: normal;
+    font-variant-caps: small-caps;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-size: 1.00em;
+    line-height: 1.0em;
+}
+/* Main Body Items*/
+.mainitem
+{
+     margin-bottom: 1.25em;
+     margin-top: 1.25em;
+}
+
+.mainheader {
+    font-family: 'Cabin', sans-serif;
+    font-variant: small-caps;
+    font-variant-ligatures: normal;
+    font-variant-caps: small-caps;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-size: 1.50em;
+    line-height: 1.0em;
+}
+
+
+/* Card Text*/
+.projectcardtext
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0em;
+    font-weight: 300;
+    margin-top: 20px;    
+}    
+
+.figurecaptiontext
+{
+    font-family: 'Cabin', sans-serif;
+    font-variant: small-caps;
+    font-variant-ligatures: normal;
+    font-variant-caps: small-caps;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+/* Debug */
+.my-container {
+    border: 1px solid red;
+}
+
+.my-row {
+    border: 3px solid red;
+    //height: 100px;
+}
+
+.my-col {
+    border: 3px dotted blue;
+}
