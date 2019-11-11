@@ -13,7 +13,7 @@
 body {
     
     font-family: 'Roboto', sans-serif;
-    margin:60px;
+    margin:60px;    
 }
 
 /* Logo Name , Felipe de Carvalho*/
@@ -40,6 +40,12 @@ body {
 /* End Logo Name*/
 
 /* Right Side Itnes*/
+/*https://www.w3schools.com/howto/howto_css_image_responsive.asp*/
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
 .infoitem {
     margin-bottom: 20px;
 }
