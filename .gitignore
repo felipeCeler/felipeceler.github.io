@@ -1,0 +1,9 @@
+.vscode
+build*
+Linux*
+Windows*
+Mac*
+
+# see https://stackoverflow.com/questions/4250063/how-to-gitignore-all-files-folder-in-a-folder-but-not-the-folder-itself
+# exclude everything
+libs/**/install/*
