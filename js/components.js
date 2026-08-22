@@ -10,13 +10,13 @@ class SiteNavbar extends HTMLElement {
 <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top w-100 px-3">
   <div class="container-fluid">
     <!-- Navbar Brand with Name and Title -->
-    <a class="navbar-brand d-flex flex-column text-start" href="index.html">
-      <span class="fw-bold fs-6">Felipe Moura de Carvalho</span>
+    <a class="navbar-brand d-flex flex-column text-left" href="index.html">
+      <span class="font-weight-bold" style="font-size: 1rem;">Felipe Moura de Carvalho</span>
       <span class="text-white" style="font-size: 0.75rem;">D.Sc Computer Science</span>
     </a>
 
     <!-- Mobile Toggler -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
