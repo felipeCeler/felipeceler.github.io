@@ -176,6 +176,16 @@ site-footer {
     box-shadow: none !important;
 }
 
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.4rem 0.5rem;
+    }
+}
+
 /* Skills & Specialties Sections & Badges */
 .skill-section {
     background: #ffffff;

@@ -31,6 +31,35 @@ class SiteNavbar extends HTMLElement {
     </div>
   </div>
 </nav>`;
+
+    const toggler = this.querySelector('.navbar-toggler');
+    const collapse = this.querySelector('#navbarNav');
+
+    if (toggler && collapse) {
+      toggler.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = collapse.classList.contains('show');
+        if (isOpen) {
+          collapse.classList.remove('show');
+          toggler.setAttribute('aria-expanded', 'false');
+          toggler.classList.add('collapsed');
+        } else {
+          collapse.classList.add('show');
+          toggler.setAttribute('aria-expanded', 'true');
+          toggler.classList.remove('collapsed');
+        }
+      });
+
+      // Close dropdown if clicked outside
+      document.addEventListener('click', (e) => {
+        if (!this.contains(e.target) && collapse.classList.contains('show')) {
+          collapse.classList.remove('show');
+          toggler.setAttribute('aria-expanded', 'false');
+          toggler.classList.add('collapsed');
+        }
+      });
+    }
   }
 }
 
