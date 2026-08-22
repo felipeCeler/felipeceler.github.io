@@ -8,15 +8,37 @@
     font-family: "Roboto";
     src: url("../font/roboto/Roboto-Regular.ttf");
 }
-    
 
-body {
-    
-    font-family: 'Roboto', sans-serif;
-    margin:60px;    
+/* Sticky Footer Layout */
+html {
+    height: 100%;
 }
 
-/* Logo Name , Felipe de Carvalho*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px; /* Gap below fixed navbar */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+site-navbar {
+    display: block;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+site-footer {
+    display: block;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Logo Name , Felipe de Carvalho */
 #brand {
     font-family: 'Cabin', sans-serif;
     font-variant: small-caps;
@@ -37,14 +59,13 @@ body {
 {
     font-weight: 700 !important;
 }
-/* End Logo Name*/
+/* End Logo Name */
 
-/* Right Side Itnes*/
-/*https://www.w3schools.com/howto/howto_css_image_responsive.asp*/
+/* Responsive Images */
 .responsive {
     width: 100%;
     height: auto;
-  }
+}
 
 .infoitem {
     margin-bottom: 20px;
@@ -60,7 +81,8 @@ body {
     font-size: 1.00em;
     line-height: 1.0em;
 }
-/* Main Body Items*/
+
+/* Main Body Items */
 .mainitem
 {
      margin-bottom: 1.25em;
@@ -74,17 +96,17 @@ body {
     font-variant-caps: small-caps;
     font-variant-numeric: normal;
     font-variant-east-asian: normal;
-    font-size: 1.50em;
+    font-size: 1.20em;
     line-height: 1.0em;
 }
 
-/* Publication*/
+/* Publication */
 .infoitempub {
     margin-bottom: 20px;
     text-align: justify;
 }
 
-/* Card Text*/
+/* Card Text */
 .projectcardtext
 {
     font-family: 'Roboto', sans-serif;
@@ -103,16 +125,119 @@ body {
     font-weight: 400;
 }
 
-/* Debug */
-.my-container {
-    border: 1px solid red;
+/* Ensure the footer takes up full width and is transparent */
+.site-footer {
+    background-color: transparent !important;
+    width: 100%;
+    margin-top: auto;
 }
 
-.my-row {
-    border: 3px solid red;
-    //height: 100px;
+/* Forces the horizontal line to stretch edge-to-edge */
+.footer-divider {
+    border: none;
+    border-top: 1px solid #dee2e6; /* Adjust color if needed */
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.my-col {
-    border: 3px dotted blue;
+/* Active navigation item styling */
+.navbar-nav .nav-link {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: opacity 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link.active {
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* Skills & Specialties Sections & Badges */
+.skill-section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.25rem 1.4rem;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-section:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.skill-section-header {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #2b3e50;
+    margin-bottom: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.skill-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.38rem 0.75rem;
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: #0c7585;
+    background-color: #f0f9fb;
+    border: 1px solid #cbe9ee;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+}
+
+.tech-badge:hover {
+    background-color: #17a2b8;
+    color: #ffffff;
+    border-color: #17a2b8;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(23, 162, 184, 0.25);
+}
+
+.specialty-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.38rem 0.75rem;
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: #334e68;
+    background-color: #f7f9fa;
+    border: 1px solid #dbe2e8;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+}
+
+.specialty-badge:hover {
+    background-color: #334e68;
+    color: #ffffff;
+    border-color: #334e68;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(51, 78, 104, 0.25);
+}
+
+.specialty-badge:hover i {
+    color: #ffffff !important;
 }
