@@ -11,8 +11,8 @@ class SiteNavbar extends HTMLElement {
   <div class="container-fluid">
     <!-- Navbar Brand with Name and Title -->
     <a class="navbar-brand d-flex flex-column text-left" href="index.html">
-      <span class="font-weight-bold" style="font-size: 1rem;">Felipe Moura de Carvalho</span>
-      <span class="text-white" style="font-size: 0.75rem;">D.Sc Computer Science</span>
+      <span class="mainheader" style="font-weight: 500; letter-spacing: -0.5px;">Felipe de Carvalho</span>
+      <span class="text-white" style="font-size: 0.55rem;"></span>
     </a>
 
     <!-- Mobile Toggler -->
@@ -72,8 +72,8 @@ class SiteFooter extends HTMLElement {
 
   <!-- Text container forced to the right -->
   <div class="container-fluid px-4 py-2">
-    <div style="text-align: right !important; width: 100%;">
-      <span style="display: inline-block;">Felipe Moura de Carvalho. Copyright © 2026. Powered by MDBootstrap</span>
+    <div style="text-align: center !important; width: 100%;">
+      <span style="display: inline-block;font-size: 0.8rem;">© 2019-2026 Felipe de Carvalho. Powered by <a href="https://mdbootstrap.com/" target="_blank">MDBootstrap</a></span>
     </div>
   </div>
 </footer>`;
