@@ -38,29 +38,6 @@ site-footer {
     width: 100%;
 }
 
-/* Logo Name , Felipe de Carvalho */
-#brand {
-    font-family: 'Cabin', sans-serif;
-    font-variant: small-caps;
-    font-variant-ligatures: normal;
-    font-variant-caps: small-caps;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-size: 1.7em;
-    line-height: 1.0em;
-}
-
-.lighttext
-{
-    font-weight: 300 !important;
-}
-
-.boldtext
-{
-    font-weight: 700 !important;
-}
-/* End Logo Name */
-
 /* Responsive Images */
 .responsive {
     width: 100%;
@@ -176,6 +153,11 @@ site-footer {
     box-shadow: none !important;
 }
 
+.tech-category,
+.specialty-category {
+    font-size: 0.9rem;
+}
+
 @media (max-width: 991.98px) {
     .navbar-collapse {
         padding-top: 0.5rem;
@@ -186,80 +168,3 @@ site-footer {
     }
 }
 
-/* Skills & Specialties Sections & Badges */
-.skill-section {
-    background: #ffffff;
-    border-radius: 8px;
-    padding: 1.25rem 1.4rem;
-    border: 1px solid #e9ecef;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.skill-section:hover {
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-}
-
-.skill-section-header {
-    font-family: 'Cabin', sans-serif;
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #2b3e50;
-    margin-bottom: 0.9rem;
-    display: flex;
-    align-items: center;
-}
-
-.skill-badge-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.tech-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.38rem 0.75rem;
-    font-size: 0.84rem;
-    font-weight: 500;
-    color: #0c7585;
-    background-color: #f0f9fb;
-    border: 1px solid #cbe9ee;
-    border-radius: 20px;
-    transition: all 0.2s ease-in-out;
-    cursor: default;
-}
-
-.tech-badge:hover {
-    background-color: #17a2b8;
-    color: #ffffff;
-    border-color: #17a2b8;
-    transform: translateY(-2px);
-    box-shadow: 0 3px 6px rgba(23, 162, 184, 0.25);
-}
-
-.specialty-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.38rem 0.75rem;
-    font-size: 0.84rem;
-    font-weight: 500;
-    color: #334e68;
-    background-color: #f7f9fa;
-    border: 1px solid #dbe2e8;
-    border-radius: 20px;
-    transition: all 0.2s ease-in-out;
-    cursor: default;
-}
-
-.specialty-badge:hover {
-    background-color: #334e68;
-    color: #ffffff;
-    border-color: #334e68;
-    transform: translateY(-2px);
-    box-shadow: 0 3px 6px rgba(51, 78, 104, 0.25);
-}
-
-.specialty-badge:hover i {
-    color: #ffffff !important;
-}
